@@ -1,0 +1,306 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html{
+    --maincolor:rgb(215, 218, 227);
+    --block2color: rgb(30,30,30);
+    --block3color:rgb(186, 129, 255);
+    --block4color:rgb(163, 255, 82);
+}
+body{
+    background-color: rgb(200, 200, 200);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.parent{
+    display: grid;
+    grid-template-areas: 
+    "head head head head"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block3 block3"
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  
+    "block2 block2 block4 block5"  ;
+    gap: 10px;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(circle, var(--maincolor) 7%, transparent 0%);
+    background-size: 60px 60px; /* Size of each dot */
+    border-radius: 70px;
+}
+.block:not(.block1){
+    border-radius: 50px;
+}
+.block1{ 
+    grid-area: head;
+    position: relative;
+    display: flex;
+    align-items: center;
+   padding: 0% 4%;
+   
+}
+.block1 a{
+text-decoration: none;
+font-size: 20px;
+    font-weight: 500;
+    color: var(--block2color);
+    padding: 0px 10px;
+}
+.block1 a:hover{
+    font-size: 20.5px;
+    color: rgb(78, 78, 78);
+}
+.buttons{
+    position: absolute;
+    left: 80%;
+    width: 180px;
+    height: 50px;
+    background-color: var(--maincolor);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button{
+    border: 0px transparent solid ;
+    padding: 12px 23px;
+    background-color: transparent;
+    border-radius: 10px ;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .2s;
+}
+.buttons button:hover{
+    background-color: var(--block2color);
+    color: aliceblue;
+}
+
+
+
+/* block2 */
+.block2{
+    position: relative;
+    grid-area: block2;
+    margin: 0px 5px 40px 60px;
+    background-color: var(--block2color);
+    overflow:hidden;
+    padding-left: 30px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: aliceblue;
+}
+.block2 img{
+    position: absolute;
+    bottom: -2%;
+    right: -25%;
+    width:80%;
+    height:85%;
+}
+.block2 a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.block2 h1{
+    font-size: 60px;
+    font-weight: 300;
+    padding-right: 120px;
+}
+.block2 button{
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 200px;
+    height: 70px;
+    border-radius: 10px;
+    text-align: start;
+    padding: 0px 20px;
+    font-weight: 600;
+    font-size: medium;
+    transition: .2s;
+}
+.block2 button p{
+    color: gray;
+    text-transform: uppercase;
+}
+.block2 button i{
+    padding-left: 30px;
+    font-size: 25px;
+}
+.block2 button:hover{
+    background-color: rgb(188, 188, 188) ;
+    width: 205px;
+    height: 75px;
+}
+.block2 button:active{
+    background-color: rgb(169, 169, 169) ;
+    width: 206px;
+    height: 76px;
+}
+
+
+
+/* block3 */
+.block3{
+    position: relative;
+    grid-area: block3;
+    margin: 0px 60px 5px 5px;
+    background-color: var(--maincolor);
+    overflow: hidden;
+    text-decoration: none;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: .2s;
+}
+.block3 i ,.block4 i{
+    transform: rotate(45deg);
+    font-size: 28px;
+    color: var(--block2color);
+    position: absolute;
+    right: 40px;
+}
+.block3 img{
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+   
+}
+.block3 p{
+    color: var(--block2color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.block3 h1{
+    color: var(--block2color);
+    position: absolute;
+    bottom: 25px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.block3:hover{
+    transform: scale(1.04);
+}
+
+
+/* block4 */
+.block4{
+    grid-area: block4;
+    margin: 5px 5px 60px 5px;
+    background-color: var(--block3color);
+    text-decoration: none;
+    position: relative;
+    padding: 30px;
+    color: aliceblue;
+    transition: .2s;
+}
+.block4 p{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.block4 h1{
+    position: absolute;
+    bottom: 25px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.block4 i{
+    color: aliceblue;
+}
+.block4:hover{
+    transform: scale(1.04);
+}
+
+
+
+/* block5 */
+.block5{
+    grid-area: block5;
+    margin: 5px 60px 60px 5px;
+    background-color: var(--block4color);
+    text-decoration: none;
+    padding: 30px;
+    position: relative;
+    transition: .2s;
+}
+.block5 p{
+    color: var(--block2color);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.block5 h1{
+    color: var(--block2color);
+    position: absolute;
+    bottom: 25px;
+    font-size: 50px;
+    font-weight: 500;
+}
+.block5:hover{
+    transform: scale(1.04);
+}
+.block5 i{
+    font-size: 28px;
+    color: var(--block2color);
+    position: absolute;
+    right: 40px;
+}
